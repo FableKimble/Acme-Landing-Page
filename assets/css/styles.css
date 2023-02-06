@@ -1,0 +1,357 @@
+*, *::after,::before {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --main-blue: #63c5da;
+    --secondary-blue: #2832c2;
+    --main-gray: #41424c;
+    --main-white: #fbfcf8;
+    --main-black: #040406;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--main-blue);
+}
+
+.headerIMG {
+    position:relative;
+    left: 47%;
+    margin-top: 10px;
+    max-width: 10%;
+    max-height: 10%;
+
+}
+
+.backgroundHeadHero{
+    display: flex;
+}
+
+ /*find out how to move header img up slightly */
+.backgroundHeadHero img{
+    position: absolute;
+    width: 100%;
+    max-height: 60vh;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.headContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    left: 14%;
+    top: 185px;
+    background-color: var(--main-gray);
+    width: 75%;
+    height: 54%;
+    box-shadow: var(--main-black) 0px 5px 15px;
+    resize: none;
+}
+
+
+.headContainer > h1 , h2 {
+    color: var(--main-blue);
+    font-size: 30px;
+    max-width: 100%;
+    text-align: center;
+    resize: none;
+    margin: 10px 10px;
+    text-shadow: 3px 4px 7px rgba(37, 37, 35, 0.8);
+}
+
+.headContainer h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+
+
+.headerEmail {
+    font-size: 10px;
+    display: inline-block;
+    height: 23px;
+    width: 25em;
+    position: relative;
+    right: 25px;
+    top: -10px;
+  }
+  
+
+  .headerEmail:focus{
+    outline: none;
+    border: 0px 0px 5px 0px;
+  }
+
+
+
+.headerButton {
+  background-color: var(--main-blue);
+  height: 23px;
+  border: 1px solid var(--main-black);
+  border-radius: 0 6px 6px 0;
+  box-shadow: var(--main-black) 0 1px 0;
+  color: var(--main-white);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 6px 16px;
+  vertical-align: auto;
+  bottom: 8.5px;
+  right: 26px;
+  position: relative;
+  line-height: 5px;
+}
+
+.emailDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: -60px;
+}
+
+  
+.emailLabel {
+    display: inline-block;
+    text-align: center;
+    width: 20em;
+    margin-right: .5em;
+    padding-top: 1em;
+    font-size: small;
+    font-style: italic;
+  }
+
+.biggerText {
+    font-size: larger;
+}
+
+label {
+  color: var(--main-blue);
+}
+
+.testContainer {
+    margin: auto;
+    position: absolute;
+    top: 40vh;
+    min-width: 350px;
+    width: 60%;
+    height: 40%;
+    background-color: var(--main-white);
+    box-shadow: var(--main-black) 0px 5px 15px;
+}
+
+.testSlides{
+    display: none;
+}
+
+.testSlides > img {
+    height: 80%;
+    width: 20%;
+}
+
+.testSlides > p {
+    position: absolute;
+    width: 80%;
+    text-align: right;
+    top: 20px;
+    padding-right: 20px;
+}
+
+.testSlides > p:first-of-type{
+    left: 70px;
+}
+
+.testSlides > p:nth-of-type(3){
+    left: 85px;
+}
+
+
+
+
+.dot { 
+    margin-top: 32vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* end of header code*/
+
+  #Products {
+    margin-top: 100vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #Products > h2 , #Products > a > h2 {
+    background-color: var(--main-gray);
+    margin-bottom: 45px;
+    padding-top: 2px;
+    height: 45px;
+  }
+
+  #Products > a > h2 {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #Products > a > h2:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
+
+  .acmeImgs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+
+  .product {
+    position: relative;
+    background-color: var(--main-gray);
+    width: 250px;
+    height: 275px;
+    box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.28);
+    transition: scale 2s;
+  }
+
+  .product:hover{
+    transform: scale(1.5);
+    z-index: 3;
+    
+  }
+
+  .product figcaption {
+    color: #63c5da;
+    font-style: italic;
+    text-align: center;
+    padding: 3px 10px;
+    text-shadow: 3px 4px 7px rgba(37, 37, 35, 0.8);
+  }
+
+  .product img {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* end of Products*/
+
+  #FAQ > h2 {
+    background-color: var(--main-gray);
+    margin-bottom: 45px;
+    padding-top: 2px;
+    height: 45px;
+  }
+
+
+  .zebra {
+    max-width: 80%;
+    margin: 2vh 10vw;
+  }
+
+  .questions {
+    text-align: left;
+    margin: 0 3vw;
+    padding: 5px;
+  }
+
+  .bold{
+    font-size: 1.2em;
+    font-weight: bolder;
+
+  }
+
+  .answers {
+    margin: 0 3vw 2vw;
+    padding: 0;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .color1 {
+    background-color: var(--main-gray);
+    height: 17vh;
+  }
+
+  .color2 {
+    background-color: var(--secondary-blue);
+    height: 19vh;
+    color: var(--main-blue);
+  }
+
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+    background-color: var(--main-white);
+    height: 20vh;
+    width: 100%;
+  }
+
+
+.leftDiv {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}
+
+
+.leftDiv > h3 , .leftDiv > p {
+  color: var(--secondary-blue);
+}
+
+.rightDiv{
+  text-align: center;
+  color: var(--main-white);
+  background-color: var(--secondary-blue);
+  width: 40%;
+}
+
+.leftDiv > h3 , .rightDiv > h3{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.rightDiv a {
+  cursor: pointer;
+  margin-top: 0;
+  color: var(--main-white);
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.rightDiv a:hover {
+  color: var(--main-blue);
+}

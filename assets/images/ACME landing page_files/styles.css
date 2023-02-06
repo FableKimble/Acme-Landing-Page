@@ -1,0 +1,32 @@
+*, *::after,::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-red: #EF4034;
+    --secondary-red: #ED2939;
+}
+
+body {
+    margin: 0px;
+}
+
+.backgroundHeadHero{
+    display: flex;
+}
+
+.backgroundHeadHero img{
+    width: 100%;
+    max-height: 60vh;
+    z-index: 0;
+}
+
+.headContainer {
+    position: absolute;
+    left: 14%;
+    top: 190px;
+    background-color: var(--secondary-red);
+    width: 75%;
+    height: 60%;
+    z-index: 1;
+}

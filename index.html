@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="/Dev-projects/Acme Landing page/assets/js/alerts.js"></script>
+    <script src="/Dev-projects/Acme Landing page/assets/js/slideShow.js"></script>
+    <title>ACME landing page</title>
+  </head>
+  <body>
+    <main>
+      <div class="headDiv">
+        <header>
+          <section id="top">
+            <img
+              class="headerIMG"
+              src="/Dev-projects/Acme Landing page/assets/images/acmeLogoBlack.png"
+              alt=""
+            />
+            <div class="backgroundHeadHero">
+              <img
+                src="/Dev-projects/Acme Landing page/assets/images/HighresHero.jpg"
+                alt="HighresHero"
+              />
+              <div class="headContainer">
+                <h1>
+                  For all your <span class="wacky"></span><span class="headSpan1">W</span
+                  ><span class="headSpan2">a</span
+                  ><span class="headSpan3">c</span
+                  ><span class="headSpan4">k</span
+                  ><span class="headSpan5">y</span></span> and Wild needs
+                </h1>
+                <h2>We got you covered</h2>
+                <form method="get" class="headerForm">
+                  <label for="headerEmail" class="emailLabel">
+                    <div class="emailDiv">
+                      <input
+                        type="email"
+                        id="headerEmail"
+                        class="headerEmail"
+                      /><a href="headerEmail"
+                        ><button type="submit" class="headerButton">
+                          Sumbit
+                        </button></a
+                      >
+                    </div>
+                    Enter email above for up to
+                    <b class="biggerText">75</b> dollars off your
+                    purchase!</label
+                  >
+                </form>
+                <div class="testContainer">
+                  <div class="testSlides fade">
+                    <img
+                      class="customer"
+                      src="assets/images/wileCoyote.webp"
+                      alt="wileCoyote "
+                    />
+                    <p class="captionText">
+                      "Without Acme brand tools, I wouldn't possibly be able to
+                      keep up with that pesky Roadrunner. "
+                    </p>
+                  </div>
+                  <div class="testSlides fade">
+                    <img
+                      class="customer"
+                      src="assets/images/Bugs_Bunny.svg.png"
+                      alt="Bugs_Bunny"
+                    />
+                    <p class="captionText">
+                      "From disguises to oversized rockets, Acme has had me
+                      covered everytime."
+                    </p>
+                  </div>
+                  <div class="testSlides fade">
+                    <img
+                      class="customer"
+                      src="assets/images/Looneytunes-roadrunner.webp"
+                      alt="Looneytunes-roadrunner"
+                    />
+                    <p class="captionText">"Meep Meep"</p>
+                  </div>
+                </div>
+                <br />
+                <div class=".dotContainer">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+      </div>
+    </main>
+    <section id="Products">
+      <h2>Best Sellers</h2>
+      <div class="acmeImgs">
+        <figure class="product">
+          <img src="/Dev-projects/Acme Landing page/assets/images/acme products/Earthquake_Pills.webp" alt="acmeEarthQuake">
+          <figcaption>Never lose another boardgame again!</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="/Dev-projects/Acme Landing page/assets/images/acme products/Giant_Mouse_Trap.webp" alt="acmeMouseTrap">
+          <figcaption>For one the small ones just won't cut it anymore!</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="/Dev-projects/Acme Landing page/assets/images/acme products/Instant_Road2.webp" alt="acmeRoad">
+          <figcaption>Traffic won't slow you down ever again with this!</figcaption>
+        </figure>
+        <figure class="product">
+          <img src="assets/images/acme products/acmePistol.jfif" alt="acmePistol">
+          <figcaption>Our leading disintegration is sure to blow your socks away and more!</caption>
+          </figure>
+        <figure class="product">
+          <img src="assets/images/acme products/acmeTornado.jpg" alt="acmeTornado">
+          <figcaption>Need the day off of work? How about your own personal disaster in a box</caption>
+          </figure>
+        <figure class="product">
+          <img src="assets/images/acme products/RPRS.jfif" alt="acmeRPRS">
+          <figcaption>Tired of being late? These skates will shoot you all the way to your goal!</caption>
+          </figure>
+      </div>
+      <a onclick="website()"><h2>...And Much More!</h2></a>
+    </section>
+    <section id="FAQ">
+      <h2>Frequently Asked Questions</h2>
+      <div class="zebra">
+        <div class="color1"><h3 class="questions"> Do you offer refunds?
+          </h3><p class="answers"><span class="bold">A.</span> Yes! In fact if you aren't satisfied with your product, we have a 90 day money back guarantee
+          </p></div>
+        </h3>
+        <div class="color2"><h3 class="questions"> My purchase required me to sign a liability waiver. What is that all about?
+        </h3> <p class="answers"><span class="bold">A. </span> Due to the structures of our products, we are not liable for any damages to ones self, property or others.</p></div>
+        <div class="color1"><h3 class="questions"> Aren't these just weapons instead of common household items?
+        </h3><p class="answers"><span class="bold">A. </span> Weapons is a harsh term that we at ACME don't think is the appropriate way to describe our items.</p></div>
+        <div class="color2"><h3 class="questions"> The answer to the last question didn't really answer it?
+          
+        </h3><p class="answers"><span class="bold">A. </span> Yes the disintegration ray comes in a variety of different colors!</p></div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="contact">
+        <div class="leftDiv">
+          <h3>Contact Us</h3>
+          <p>Our 24/7 open door policy is always in effect</p>
+        </div>
+        <div class="rightDiv">
+          <h3>Here is our email!</h3>
+          <a href="acmelanding@gmail.com">Acmelanding@gmail.com</a>
+        </div>
+    </div>
+    </section>
+  </body>
+</html>
